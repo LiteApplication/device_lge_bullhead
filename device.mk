@@ -607,6 +607,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Thermal HAL
 PRODUCT_PACKAGES += \
     thermal.bullhead \
+    android.hardware.thermal@1.1-service-bullhead \
 
 #GNSS HAL
 PRODUCT_PACKAGES += \
