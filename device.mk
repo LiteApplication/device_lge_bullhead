@@ -635,8 +635,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.disable_rescue=true
 
 # ro.product.first_api_level indicates the first api level the device has commercially launched on.
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.product.first_api_level=23
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
@@ -649,7 +648,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.debuggable=1
 
 # facelock properties
-PRODUCT_PROPERTY_OVERRIDES += \
+#PRODUCT_PROPERTY_OVERRIDES += \
     ro.facelock.black_timeout=700 \
     ro.facelock.det_timeout=2500 \
     ro.facelock.rec_timeout=3500 \
