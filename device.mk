@@ -176,6 +176,10 @@ PRODUCT_PACKAGES += \
     gralloc.msm8992 \
     libgenlock
 
+# Light HAL
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.bullhead
+
 # Audio HAL and utilities
 USE_XML_AUDIO_POLICY_CONF := 1
 PRODUCT_PACKAGES += \
