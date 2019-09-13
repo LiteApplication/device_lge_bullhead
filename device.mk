@@ -606,6 +606,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Thermal HAL
 PRODUCT_PACKAGES += \
+    thermal.bullhead \
+
+#GNSS HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
+    android.hardware.gnss@1.0-service
+
+PRODUCT_PACKAGES += \
     thermal.bullhead
 
 # Modem debugger/misc
