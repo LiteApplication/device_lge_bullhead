@@ -264,7 +264,7 @@ PRODUCT_PACKAGES += \
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/gps.conf
+    device/lge/bullhead/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
 
 # GPS
 PRODUCT_PACKAGES += \
