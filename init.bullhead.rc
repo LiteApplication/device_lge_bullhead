@@ -223,9 +223,13 @@ on post-fs-data
     write /sys/devices/soc.0/f9924000.i2c/power/control on
 
     # Create the directories used by the Wireless subsystem
-    mkdir /data/vendor/wifi 0770 wifi wifi
+    mkdir /data/misc/wifi 0770 wifi wifi
+    mkdir /data/misc/wifi/wpa_supplicant 0770 wifi wifi
+    mkdir /data/vendor/wifi 0771 wifi wifi
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
+    mkdir /data/misc/dhcp 0770 dhcp dhcp
+    chown dhcp dhcp /data/misc/dhcp
 
     # Create the directories used by CnE subsystem
     mkdir /data/connectivity 0771 system system
@@ -240,6 +244,9 @@ on post-fs-data
 
     # Create folder for mm-qcamera-daemon
     mkdir /data/misc/camera 0770 camera camera
+
+    # Create folder for WifiHal socket
+    mkdir /dev/socket/wifihal/ 0775 system system
 
     # change permission for ldaf
     chown input system /persist/calibration
