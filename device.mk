@@ -666,13 +666,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.secure=0 \
     ro.debuggable=1
 
-# facelock properties
-#PRODUCT_PROPERTY_OVERRIDES += \
-    ro.facelock.black_timeout=700 \
-    ro.facelock.det_timeout=2500 \
-    ro.facelock.rec_timeout=3500 \
-    ro.facelock.est_max_time=600
-
 # miracast props
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1﻿
