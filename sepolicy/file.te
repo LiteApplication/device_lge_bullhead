@@ -13,8 +13,6 @@ type msm_irqbalance_socket, file_type;
 type firmware_file, fs_type, contextmount_type;
 type fsg_file, fs_type, contextmount_type;
 
-type netmgrd_socket, file_type;
-
 type cnd_socket, file_type;
 type adspd_socket, file_type;
 type mpdecision_socket, file_type;
@@ -121,8 +119,11 @@ type debugfs_kgsl_proc, fs_type, debugfs_type;
 # type for netd
 type sysfs_rmnet, fs_type, sysfs_type;
 
+type netmgrd_socket, file_type;
+
 # type for init
 type sysfs_block, fs_type, sysfs_type;
 type sysfs_rfkill0, fs_type, sysfs_type;
 type sysfs_subsys1, fs_type, sysfs_type;
 type sysfs_mmcblk0_queue, fs_type, sysfs_type;
+type debugfs_wlan, debugfs_type, fs_type;
