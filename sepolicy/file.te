@@ -126,3 +126,4 @@ type sysfs_block, fs_type, sysfs_type;
 type sysfs_rfkill0, fs_type, sysfs_type;
 type sysfs_subsys1, fs_type, sysfs_type;
 type sysfs_mmcblk0_queue, fs_type, sysfs_type;
+type debugfs_wlan, debugfs_type, fs_type;
