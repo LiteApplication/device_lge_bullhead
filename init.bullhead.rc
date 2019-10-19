@@ -246,7 +246,8 @@ on post-fs-data
     mkdir /data/misc/camera 0770 camera camera
 
     # Create folder for WifiHal socket
-    mkdir /dev/socket/wifihal/ 0775 system system
+    mkdir /dev/socket/wifihal 0770 wifi wifi
+    chmod 2770 /dev/socket/wifihal
 
     # change permission for ldaf
     chown input system /persist/calibration
