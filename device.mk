@@ -382,6 +382,12 @@ PRODUCT_PACKAGES += \
     android.hardware.tests.msgq@1.0-impl
 endif
 
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
 # Vibrator HAL
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
