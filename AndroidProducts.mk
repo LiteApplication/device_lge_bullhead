@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/validus_bullhead.mk
+    $(LOCAL_DIR)/aosp_bullhead.mk
 
 COMMON_LUNCH_CHOICES := \
-    validus_bullhead-userdebug
+    aosp_bullhead-userdebug

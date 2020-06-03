@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "svlog/kernel_lge_bullhead",
+    "target_path": "kernel/lge/bullhead",
+    "branch": "stable"
+  },
+  {
+    "repository": "BlissRoms-Devices/proprietary_vendor_lge",
+    "target_path": "vendor/lge/bullhead",
+    "branch": "q"
+  }
+]

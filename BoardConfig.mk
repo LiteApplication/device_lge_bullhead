@@ -34,7 +34,7 @@ DONT_DEXPREOPT_PREBUILTS := true
 # Inline kernel
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/lge/bullhead
-TARGET_KERNEL_CONFIG := gzr_defconfig
+TARGET_KERNEL_CONFIG := aoscp_bullhead_defconfig
 
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
