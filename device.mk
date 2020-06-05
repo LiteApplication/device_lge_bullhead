@@ -22,6 +22,10 @@
 # Enable support for chinook sensorhub
 TARGET_USES_CHINOOK_SENSORHUB := false
 
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/privapp-permissions-bullhead.xml:system/etc/permissions/privapp-permissions-bullhead.xml
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.bullhead.rc:root/init.bullhead.rc \
     $(LOCAL_PATH)/init.bullhead.usb.rc:root/init.bullhead.usb.rc \
