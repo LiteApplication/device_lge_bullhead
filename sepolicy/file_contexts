@@ -68,6 +68,11 @@
 /dev/rmnet_ctrl.*                      u:object_r:rmnet_device:s0
 /dev/dpl_ctrl                          u:object_r:rmnet_device:s0
 
+# TimeKeep
+/sys/devices/soc\.0/qpnp-rtc-8/rtc/rtc0(/.*)?                           u:object_r:sysfs_rtc:s0
+/(system/vendor|vendor)/bin/timekeep                                    u:object_r:timekeep_exec:s0
+
+
 ## Radio related
 # modem driver
 /dev/mdm                               u:object_r:radio_device:s0
