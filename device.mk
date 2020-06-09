@@ -197,6 +197,12 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     rmnetcli
 
+# TimeKeep
+PRODUCT_PACKAGES += \
+    timekeep \
+    TimeKeep
+
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
