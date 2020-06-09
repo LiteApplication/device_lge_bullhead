@@ -196,7 +196,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl \
     rmnetcli
-    
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
@@ -224,7 +224,7 @@ PRODUCT_PACKAGES += \
 
 # Context Hub HAL
 PRODUCT_PACKAGES += \
-    android.hardware.contexthub@1.0-service \
+    android.hardware.contexthub@1.0-impl.nanohub \
     android.hardware.contexthub@1.0-impl
 
 # DRM
