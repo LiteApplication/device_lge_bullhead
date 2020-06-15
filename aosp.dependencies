@@ -5,12 +5,40 @@
     "branch": "stable"
   },
   {
-    "repository": "BlissRoms-Devices/proprietary_vendor_lge",
+    "repository": "LiteApplication/vendor_vendor_lge",
     "target_path": "vendor/lge/bullhead",
-    "branch": "q"
+    "branch": "aex7.x"
   },
   {
-    "repository": "android_hardware_sony_timekeep",
-    "target_path": "hardware/sony/timekeep"
+    "repository": "LineageOS/android_hardware_sony_timekeep",
+    "target_path": "hardware/sony/timekeep",
+    "branch": "lineage-17.1"
+  },
+  {
+    "repository": "svlog/hardware_qcom_media",
+    "target_path":"hardware/qcom/media",
+    "branch": "ten"
+  },
+  {
+    "repository": "LiteApplication/hardware_qcom_display",
+    "target_path":"hardware/qcom/display",
+    "branch": "aex7.x"
+  },
+  {
+    "repository": "LiteApplication/vendor_aosp",
+    "target_path":"vendor/aosp",
+    "branch": "aex7.x"
+
+  },
+  {
+    "repository": "LiteApplication/art",
+    "target_path":"art",
+    "branch": "aex7.x"
+
+  },
+  {
+    "repository": "LiteApplication/hardware_qcom_audio",
+    "target_path":"hardware/qcom/audio",
+    "branch": "aex7.x"
   }
 ]
