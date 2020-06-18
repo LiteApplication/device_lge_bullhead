@@ -58,4 +58,13 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     WallpaperPicker
 
+ifeq ($(TARGET_BUILD_VARIANT), eng)
+    PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+        ro.secure=0 \
+        ro.allow.mock.location=1 \
+        ro.debuggable=1 \
+        persist.sys.usb.config=adb \
+        ro.adb.secure=0
+endif
+
 
