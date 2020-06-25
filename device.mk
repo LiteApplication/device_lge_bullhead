@@ -227,15 +227,15 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     camera.device@3.2-impl
 
+# Contexthub
+PRODUCT_PACKAGES += \
+    android.hardware.contexthub@1.0-impl.nanohub \
+    android.hardware.contexthub@1.0-service
+
 # Configstore HAL
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service \
     android.hardware.configstore@1.0-impl
-
-# Context Hub HAL
-PRODUCT_PACKAGES += \
-    android.hardware.contexthub@1.0-impl.nanohub \
-    android.hardware.contexthub@1.0-impl
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -344,8 +344,6 @@ PRODUCT_PACKAGES += \
     activity_recognition.bullhead \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service \
-    android.hardware.contexthub@1.0-impl.nanohub \
-    android.hardware.contexthub@1.0-service
 
 ifeq ($(TARGET_USES_CHINOOK_SENSORHUB),true)
 PRODUCT_PACKAGES += \
