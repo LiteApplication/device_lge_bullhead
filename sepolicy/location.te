@@ -49,3 +49,4 @@ userdebug_or_eng(`
 ')
 
 allow location kernel:system { module_request };
+allow location diag_device:chr_file { read write open ioctl };

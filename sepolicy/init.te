@@ -36,3 +36,16 @@ allow init sysfs_mmcblk0_queue:file rw_file_perms;
 # kgsl
 allow init debugfs_kgsl_proc:dir { search read open relabelfrom };
 allow init debugfs_kgsl_proc:file { read write getattr setattr };
+
+allow init persist_file:dir mounton;
+allow init firmware_file:dir mounton;
+allowxperm init firmware_file:dir ioctl MMC_IOC_CMD;
+allow init system_file:file mounton;
+allowxperm init system_file:file ioctl MMC_IOC_CMD;
+
+# Leds
+allow init sysfs_leds:lnk_file read;
+
+allow init sysfs_graphics:file setattr;
+dontaudit init sysfs:file { write };
+allow init diag_device:chr_file unlink;

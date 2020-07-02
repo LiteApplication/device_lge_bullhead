@@ -5,3 +5,5 @@ hwbinder_use(hal_audio_default);
 binder_use(hal_audio_default);
 binder_call(hal_audio_default,ashmemd);
 binder_call(hal_audio_default, servicemanager);
+
+allow hal_audio_default diag_device:chr_file { read write open ioctl };
