@@ -93,12 +93,12 @@ on early-boot
     write /sys/module/peripheral_loader/parameters/proxy_timeout_ms ${persist.sys.pil_proxy_timeout}
 
     # Busy loop to wait for devices booted by devstart_sh just in case device not ready
-    exec - root root system -- /system/bin/init.qcom.devwait.sh
+    exec - root root system -- /vendor/bin/init.qcom.devwait.sh
 
 on boot
     # execute script to set initial CPU settings
     # don't run as a service to avoid race conditions
-    exec - root root system -- /system/bin/init.bullhead.power.sh
+    exec - root root system -- /vendor/bin/init.bullhead.power.sh
 
     # update foreground cpuset now that processors are up
     # foreground gets all CPUs except CPU 3
@@ -190,7 +190,7 @@ on post-fs
 
     start qseecomd
     # Busy loop to wait for qseecomd started
-    exec - root root system -- /system/bin/init.bullhead.qseecomd.sh
+    exec - root root system -- /vendor/bin/init.bullhead.qseecomd.sh
     # Start devices by sysfs trigger
     start devstart_sh
 
@@ -425,7 +425,7 @@ service cnd /system/bin/cnd
     socket cnd stream 660 root inet
     group root wakelock
 
-service bullhead-sh /system/bin/init.bullhead.sh
+service bullhead-sh /vendor/bin/init.bullhead.sh
     class late_start
     user radio
     group system
@@ -439,7 +439,7 @@ service bullhead-sh /system/bin/init.bullhead.sh
 #    oneshot
 #    keycodes 114 115 116
 
-service devstart_sh /system/bin/init.qcom.devstart.sh
+service devstart_sh /vendor/bin/init.qcom.devstart.sh
     class main
     user root
     group root system
