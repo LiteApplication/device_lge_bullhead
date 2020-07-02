@@ -34,8 +34,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.recovery.bullhead.rc:recovery/root/init.recovery.bullhead.rc \
     $(LOCAL_PATH)/init.bullhead.ramdump.rc:root/init.bullhead.ramdump.rc \
     $(LOCAL_PATH)/init.bullhead.fp.rc:root/init.bullhead.fp.rc \
-    $(LOCAL_PATH)/init.qcom.devwait.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/init.qcom.devwait.sh \
-    $(LOCAL_PATH)/init.qcom.devstart.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/init.qcom.devstart.sh \
+    $(LOCAL_PATH)/init.qcom.devwait.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.devwait.sh \
+    $(LOCAL_PATH)/init.qcom.devstart.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.devstart.sh \
     $(LOCAL_PATH)/fstab.bullhead:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.bullhead \
     $(LOCAL_PATH)/fstab.bullhead:$(TARGET_COPY_OUT_RAMDISK)/fstab.bullhead
 
@@ -149,15 +149,15 @@ PRODUCT_COPY_FILES += \
 
 # Power configuration file
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.bullhead.power.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/init.bullhead.power.sh
+    $(LOCAL_PATH)/init.bullhead.power.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.bullhead.power.sh
 
 # MBN
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.bullhead.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/init.bullhead.sh
+    $(LOCAL_PATH)/init.bullhead.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.bullhead.sh
 
 # Qseecomd configuration file
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.bullhead.qseecomd.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/init.bullhead.qseecomd.sh
+    $(LOCAL_PATH)/init.bullhead.qseecomd.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.bullhead.qseecomd.sh
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 
