@@ -56,3 +56,4 @@ allow system_server sysfs_backlight:file write;
 allow system_server sysfs_qpnp_25:file write;
 
 dontaudit system_server system_server:process execmem;
+allow system_server kernel:system syslog_read;

@@ -40,5 +40,10 @@
     "repository": "LiteApplication/hardware_qcom_audio",
     "target_path":"hardware/qcom/audio",
     "branch": "aex7.x"
+  },
+  {
+    "repository": "LiteApplication/hardware_qcom_gps",
+    "target_path":"hardware/qcom/gps",
+    "branch": "aex7.x"
   }
 ]

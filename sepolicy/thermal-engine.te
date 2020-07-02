@@ -34,3 +34,5 @@ allow thermal-engine sysfs_battery:file rw_file_perms;
 
 r_dir_file(thermal-engine, sysfs_ssr)
 r_dir_file(thermal-engine, sysfs_leds)
+
+dontaudit thermal-engine thermal-engine:capability { dac_override dac_read_search }; 

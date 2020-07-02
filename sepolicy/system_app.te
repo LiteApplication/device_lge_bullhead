@@ -15,3 +15,7 @@ allow system_app debugfs_kgsl_proc:file { read write getattr setattr };
 
 allow system_app proc_pagetypeinfo:file open;
 allow system_app sysfs_block:dir search;
+allow system_app { wificond hal_graphics_composer_default }:binder call;
+allow system_app { proc_pagetypeinfo sysfs_block }:file { read getattr open };
+allow system_app logpersistd_logging_prop:file { open read getattr };
+
