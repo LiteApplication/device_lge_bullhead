@@ -129,7 +129,7 @@ PRODUCT_COPY_FILES += \
 
 # For GPS
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sec_config:$(TARGET_COPY_OUT_SYSTEM)/etc/sec_config
+    $(LOCAL_PATH)/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
 # NFC config files
 PRODUCT_COPY_FILES += \
