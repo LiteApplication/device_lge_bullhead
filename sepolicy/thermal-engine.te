@@ -36,3 +36,4 @@ r_dir_file(thermal-engine, sysfs_ssr)
 r_dir_file(thermal-engine, sysfs_leds)
 
 dontaudit thermal-engine thermal-engine:capability { dac_override dac_read_search }; 
+allow thermal-engine diag_device:chr_file { read write };

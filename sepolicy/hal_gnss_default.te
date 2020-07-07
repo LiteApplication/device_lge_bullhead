@@ -20,3 +20,4 @@ allow hal_gnss_default hal_gnss_default:socket read;
 
 allow hal_gnss_default hal_gnss_default:socket { create write };
 dontaudit hal_gnss_default hal_gnss_default:udp_socket create;
+allow hal_gnss_default diag_device:chr_file { read write open ioctl };

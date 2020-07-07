@@ -22,4 +22,4 @@ allow wcnss_service sysfs_wlan0:lnk_file { read open };
 
 qmux_socket(wcnss_service)
 
-allow wcnss_service diag_device:chr_file { read write open };
+allow wcnss_service diag_device:chr_file { read write open ioctl };

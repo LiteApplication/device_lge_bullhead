@@ -20,4 +20,4 @@ allow bullhead-sh shell_exec:file r_file_perms;
 # execute toybox/toolbox
 allow bullhead-sh toolbox_exec:file rx_file_perms;
 
-allow bullhead-sh vfat:dir search;
+allow bullhead-sh vfat:dir { search read };
