@@ -4,6 +4,7 @@ dontaudit hal_audio_default hal_power_hwservice:hwservice_manager find;
 hwbinder_use(hal_audio_default);
 binder_use(hal_audio_default);
 binder_call(hal_audio_default,ashmemd);
+
 binder_call(hal_audio_default, servicemanager);
 
 allow hal_audio_default diag_device:chr_file { read write };
