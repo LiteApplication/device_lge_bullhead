@@ -42,6 +42,9 @@ $(call inherit-product, vendor/aosp/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
+# Inherit from Android Go product configuration
+$(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/go_defaults.mk)
+
 PRODUCT_NAME := aosp_bullhead
 PRODUCT_DEVICE := bullhead
 PRODUCT_BRAND := google
@@ -67,4 +70,27 @@ ifeq ($(TARGET_BUILD_VARIANT), eng)
         ro.adb.secure=0
 endif
 
-
+# Optimization configs
+ifeq ($(TARGET_PRODUCT), aosp_bullhead)
+	
+	# Remove delay before ring (prevents phone from lagging on incomming calls)
+	PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+		ro.telephony.call_ring.delay=0 \
+		ring.delay=0
+	
+	# Disable error report
+	PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+		profiler.force_disable_err_rpt=1 \
+		profiler.force_disable_ulog=1
+	
+	# Improve scrolling performances
+	PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+		windowsmgr.max_events_per_sec=150 \
+		ro.min_pointer_dur=8 ro.max.fling_velocity=12000 \
+		ro.min.fling_velocity=8000
+	
+	# Improve power on speed
+	PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+		ro.config.hw_quickpoweron=true
+	
+endif
