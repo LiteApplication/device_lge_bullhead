@@ -67,7 +67,8 @@ TARGET_HEADER_LIBRARIES := generated_kernel_headers
 
 #LOCAL_STATIC_LIBRARIES := libqcamera2_util
 LOCAL_C_INCLUDES += \
-        $(TARGET_OUT_HEADERS)/qcom/display
+        hardware/qcom/display/msm8994/libgralloc/includes/libgralloc \
+        hardware/qcom/display/msm8994/libqdutils/includes/libqdutils
 
 ifeq ($(call is-board-platform-in-list, msm8992),true)
 LOCAL_CFLAGS += -DOPTIMIZE_BUF_COUNT
