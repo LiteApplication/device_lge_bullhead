@@ -242,11 +242,6 @@ PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-impl.nanohub \
     android.hardware.contexthub@1.0-service
 
-# Configstore HAL
-PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-service \
-    android.hardware.configstore@1.0-impl
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
