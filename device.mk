@@ -333,6 +333,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.bullhead \
     android.hardware.power@1.0-impl \
+    android.hardware.power@1.0-service \
+    android.hardware.power.stats@1.0-impl
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
