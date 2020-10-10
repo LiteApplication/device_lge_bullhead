@@ -8,7 +8,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-     <hal format="hidl">
+    <hal format="hidl">
         <name>android.hardware.audio.effect</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
@@ -17,7 +17,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-     <hal format="hidl">
+    <hal format="hidl">
         <name>android.hardware.graphics.mapper</name>
         <transport arch="32+64">passthrough</transport>
         <version>2.0</version>
@@ -160,7 +160,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-   <hal format="hidl">
+    <hal format="hidl">
         <name>android.hardware.light</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
@@ -178,7 +178,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-     <hal format="hidl">
+    <hal format="hidl">
         <name>android.hardware.keymaster</name>
         <transport>hwbinder</transport>
         <version>4.0</version>
