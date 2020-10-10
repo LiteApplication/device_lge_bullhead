@@ -329,6 +329,10 @@ PRODUCT_PACKAGES += \
     Tag \
     android.hardware.nfc@1.2-service
 
+PRODUCT_PACKAGES += \
+    vendor.nxp.nxpese@1.0-service \
+    vendor.nxp.nxpese@1.0-impl
+
 # Power HAL
 PRODUCT_PACKAGES += \
     power.bullhead \
