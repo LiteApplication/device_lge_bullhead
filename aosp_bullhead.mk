@@ -35,7 +35,7 @@ BUILD_FINGERPRINT := google/bullhead/bullhead:8.1.0/OPM7.181105.004/5038062:user
 
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product-if-exists, vendor/aosp/common.mk)
 
 
 # Inherit from the common Open Source product configuration
@@ -49,7 +49,7 @@ PRODUCT_NAME := aosp_bullhead
 PRODUCT_DEVICE := bullhead
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 5X
-TARGET_MANUFACTURER := LGE
+PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 #PRODUCT_COPY_FILES += device/lge/bullhead/fstab.aosp_bullhead:root/fstab.bullhead
