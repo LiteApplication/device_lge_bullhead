@@ -615,15 +615,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Thermal HAL
 PRODUCT_PACKAGES += \
     thermal.bullhead \
-    android.hardware.thermal@1.1-service-bullhead \
 
 #GNSS HAL
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
     android.hardware.gnss@1.0-service
-
-PRODUCT_PACKAGES += \
-    thermal.bullhead
 
 # Modem debugger/misc
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
