@@ -327,7 +327,7 @@ PRODUCT_PACKAGES += \
     libnfc-nci \
     NfcNci \
     Tag \
-    android.hardware.nfc@1.1-service
+    android.hardware.nfc@1.2-service
 
 # Power HAL
 PRODUCT_PACKAGES += \
