@@ -26,6 +26,16 @@ TARGET_USES_CHINOOK_SENSORHUB := false
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/privapp-permissions-bullhead.xml:system/etc/permissions/privapp-permissions-bullhead.xml
 
+
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+  LOCAL_KERNEL := device/lge/bullhead-kernel/Image.gz-dtb
+else
+  LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
+PRODUCT_COPY_FILES := \
+    $(LOCAL_KERNEL):kernel
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.bullhead.rc:root/init.bullhead.rc \
     $(LOCAL_PATH)/init.bullhead.usb.rc:root/init.bullhead.usb.rc \
