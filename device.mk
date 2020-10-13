@@ -327,7 +327,7 @@ PRODUCT_PACKAGES += \
     libnfc-nci \
     NfcNci \
     Tag \
-    android.hardware.nfc@1.2-service
+    android.hardware.nfc@1.1-service
 
 PRODUCT_PACKAGES += \
     vendor.nxp.nxpese@1.0-service \
